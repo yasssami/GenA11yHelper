@@ -15,8 +15,12 @@ Mihir Soni,Dondrel Samuels
 
 AWS Code:
 
-Yassine Sami: PC36VH5465GGNF1 
+Yassine Sami: XXXXXXXXXXX
 
-Mihir Soni: PC245ZI84HVWW41 
+Mihir Soni: XXXXXXXXXXX 
 
-Dondrel Samuels: PC3N2GR7I3A6020 
+Dondrel Samuels: XXXXXXXXXXX
+
+### For Credit details please Contact administrator on Slack
+
+**https://app.slack.com/huddle/T01BN24U54L/C08SF5BUGN4**
