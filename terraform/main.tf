@@ -12,7 +12,7 @@ resource "aws_s3_bucket" "prompts" {
 }  
 
 data "aws_ami" "ubuntu" {
-  most_recent = true
+  most_recent = truell
   owners      = ["099720109477"]
 
   filter {
