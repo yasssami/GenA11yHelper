@@ -9,8 +9,8 @@ Main Participant Name: **Yassine Sami**
 
 Team Participant Names: 
 
-Mihir Soni
-Dondre Samuels
+Mihir Soni,
+Dondre Samuels,
 Vaishali Jaiswal
 
 --------------------------------------------
