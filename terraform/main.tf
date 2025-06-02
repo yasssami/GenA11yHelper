@@ -53,8 +53,8 @@ resource "aws_security_group" "app_sg" {
     from_port   = 8501 
     to_port     = 8501  
     protocol    = "tcp"  
-    cidr_blocks = ["0.0.0.0/0"]  
-  }  
+    cidr_blocks = ["0.0.0.0/0"]
+  }
 
   # deployment ingress
   ingress {
