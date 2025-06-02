@@ -3,7 +3,7 @@
 
 Project Name: **GenA11yHelper**
 
-Group Name: **TBD**
+Group Name: **Prompt Pilot**
 
 Main Participant Name: **Yassine Sami**
 
