@@ -21,6 +21,8 @@ Mihir Soni: PC245ZI84HVWW41
 
 Dondre Samuels: PC3N2GR7I3A6020 
 
+Vaishali Jaiswal: PC1K0K43P3W1753 
+
 
 ### For Credit details please Contact administrator on Slack
 
