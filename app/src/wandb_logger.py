@@ -1,6 +1,3 @@
-<<<<<<< Updated upstream
-#tracking
-=======
 import wandb
 import os
 
@@ -12,4 +9,3 @@ def log_feedback(query, response, prompt_version, rating):
         "prompt_version": prompt_version,
         "user_rating": rating
     })
->>>>>>> Stashed changes

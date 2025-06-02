@@ -1,6 +1,3 @@
-<<<<<<< Updated upstream
-#langchain integration
-=======
 import os
 import boto3
 from langchain.prompts import PromptTemplate
@@ -28,7 +25,7 @@ llm = OpenAI(
     openai_api_key=os.getenv("OPENAI_API_KEY")
 )
 
-def load_prompt_template(prompt_version: str):
+def load_prompt_template(prompt_version):
     s3 = boto3.client("s3")
     try:
         response = s3.get_object(
@@ -112,4 +109,3 @@ def get_response(query: str, prompt_version: str) -> str:
         run.finish()
     
     return response
->>>>>>> Stashed changes

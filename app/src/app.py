@@ -1,6 +1,3 @@
-<<<<<<< Updated upstream
-#streamlit script
-=======
 import streamlit as st  
 from prompt_utils import get_response
 from wandb_logger import log_feedback
@@ -24,4 +21,3 @@ if query:
     if st.button("Submit Feedback"):
         log_feedback(query, response, prompt_version, rating)
         st.success("Feedback logged")
->>>>>>> Stashed changes
