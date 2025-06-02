@@ -19,7 +19,7 @@ Yassine Sami: XXXXXXXXXXX
 
 Mihir Soni: XXXXXXXXXXX 
 
-Dondrel Samuels: XXXXXXXXXXX
+Dondre Samuels: XXXXXXXXXXX
 
 ### For Credit details please Contact administrator on Slack
 
