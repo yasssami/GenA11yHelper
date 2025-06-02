@@ -5,8 +5,10 @@ provider "aws" {
 }  
 
 # prompt versioning w/ s3 buckets
-resource "aws_s3_bucket" "prompts" {  
-  bucket = "gena11yhelper-prompts"  
+resource "aws_s3_bucket" "prompts" {
+
+  bucket = "gena11yhelper-prompts-${random_id.suffix.hex}"
+
   acl    = "private"  
   versioning { enabled = true }  
 }  
@@ -37,21 +39,22 @@ resource "aws_instance" "app" {
 	sudo apt update
 	sudo apt install -y docker.io
 	sudo systemctl start docker
+  sudo usermod -aG docker ubuntu
 EOF
 
 }  
 
 resource "aws_security_group" "app_sg" {  
 
-  name = "gena11y-sg"
+  name = "gena11y-sg-${random_id.suffix.hex}"
 
   # streamlit ingress
   ingress {  
     from_port   = 8501 
     to_port     = 8501  
     protocol    = "tcp"  
-    cidr_blocks = ["0.0.0.0/0"]  
-  }  
+    cidr_blocks = ["0.0.0.0/0"]
+  }
 
   # deployment ingress
   ingress {
@@ -75,7 +78,7 @@ resource "tls_private_key" "ssh_key" {
 }
 
 resource "aws_key_pair" "deployer" {
-  key_name   = "gena11y-deploy-key"
+  key_name   = "gena11y-deploy-key-${random_id.suffix.hex}"
   public_key = tls_private_key.ssh_key.public_key_openssh
 }
 
@@ -86,4 +89,8 @@ output "public_ip" {
 output "ssh_private_key" {
   value     = tls_private_key.ssh_key.private_key_pem
   sensitive = true
+}
+
+resource "random_id" "suffix" {
+  byte_length = 4
 }
